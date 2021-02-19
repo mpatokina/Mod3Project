@@ -71,7 +71,7 @@ function Clinics() {
     }
   
     return(
-      <div>
+      <div className = "container">
           <h2>Animal Clinics</h2>
         { clinics && clinics.map(clinic => <Clinic clinic={ clinic } selectClinic={ selectClinic } deleteClinic={ deleteClinic } />)}
   

@@ -71,7 +71,7 @@ function Shelters() {
     }
   
     return(
-      <div>
+      <div className = "container">
           <h2>Animal Shelters</h2>
         { shelters && shelters.map(shelter => <Shelter shelter={ shelter } selectShelter={ selectShelter } deleteShelter={ deleteShelter } />)}
   

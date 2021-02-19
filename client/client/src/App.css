@@ -1,17 +1,23 @@
 body {
   padding-left: 5%;
-  padding-right: 5%;
-   
+  padding-right: 5%; 
+  background-image: url("./components/pawprintseamless.jpg"); 
 }
 
-/* .header-name {
-  background-image: url("./components/pawprint.jpg");
-  opacity: 0.2;
-} */
+ .header-name { 
+  text-align: center;
+  color: blue;
+}  
 
-/* .footer-name {
-  background-image: url("./components/paws.png")
-} */
+.footer-name {
+  text-align: center;
+  font-size: small;
+}
+
+h1 {
+  font-family: Tahoma;
+  font-size: 50px;
+}
 
 h3 {
   font-family: Tahoma;
@@ -30,14 +36,14 @@ h5 {
   color: blue;
 }
 .button-success {
-  background-color: #4CAF50;
+  background-color: darkorange;
   color: white;
   font-weight: 400;
   font-size: medium;
 }  
 
 .select-button {
-  background-color: darkorange;
+  background-color: teal;
   color: white;
   font-weight: 400;
   font-size: medium;
@@ -49,6 +55,23 @@ h5 {
   font-weight: 400;
   font-size: medium;
 }
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  
+}
+
+.Navbar {
+	font-size: 25px;
+	padding-left: 15px;
+	color: #ffffff;
+	height: 50px;
+	display: flex;
+	align-items: left;
+	justify-content: space-around;  }
 
 /* .App-logo {
   height: 40vmin;

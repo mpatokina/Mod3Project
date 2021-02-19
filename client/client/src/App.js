@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 
+
 import Header from './components/Header.js';
 import Shelters from './components/Shelters.js';
 import Clinics from './components/Clinics.js';
@@ -27,15 +28,15 @@ class App extends React.Component {
         <Header />
         <Router>
         <div>
-          <ul>
+          <ul className = "Navbar">
             <li>
-              <Link to="/shelters">Shelters</Link>
+              <Link to="/shelters">Animal Shelters</Link>
             </li>
             <li>
-              <Link to="/clinics">Clinics</Link>
+              <Link to="/clinics">Animal Clinics</Link>
             </li>
             <li>
-              <Link to="/parks">Parks</Link>
+              <Link to="/parks">Dog Parks/Playgrounds</Link>
             </li>
           </ul>
           <Switch>

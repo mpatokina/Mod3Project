@@ -1,8 +1,56 @@
-.App {
-  text-align: center;
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+   
 }
 
-.App-logo {
+/* .header-name {
+  background-image: url("./components/pawprint.jpg");
+  opacity: 0.2;
+} */
+
+/* .footer-name {
+  background-image: url("./components/paws.png")
+} */
+
+h3 {
+  font-family: Tahoma;
+}
+h5 {
+  font-family: Tahoma;
+
+}
+
+
+.App {
+  text-align: center;
+  }
+
+.shelter-name {
+  color: blue;
+}
+.button-success {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 400;
+  font-size: medium;
+}  
+
+.select-button {
+  background-color: darkorange;
+  color: white;
+  font-weight: 400;
+  font-size: medium;
+}  
+
+.delete-button {
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  font-size: medium;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +83,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -100,7 +100,7 @@ function Shelters() {
               Phone:
               <input type="text" name="shelterPhone" />
             </label>
-            <input type="submit" value="Add shelter" className="button success" />
+            <input type="submit" value="ADD NEW SHELTER" className="button-success" />
           </form>
   
           { selectedShelter && <form
@@ -126,7 +126,7 @@ function Shelters() {
               Phone:
               <input type="text" name="shelterPhone" defaultValue={ selectedShelter.shelterPhone } />
             </label>
-            <input type="submit" value="Edit shelter information" />
+            <input className="select-button" type="submit" value="UPDATE SHELTER INFO" />
           </form> }
         </div>
       </div>
@@ -136,10 +136,11 @@ function Shelters() {
   function Shelter({ shelter, selectShelter, deleteShelter }) {
     return (
       <div className="shelter" key={ shelter.id }>
-        <h4 className="shelter-name">Shelter name: <span className="shelter-name">{ shelter.shelterName }</span> </h4>
-        <h6>Zip code <span className="shelter-zip-code">{ shelter.shelterZipCode }</span></h6>
-        <button className="select-shelter-button" onClick={ () => selectShelter(shelter) }>Update shelter info</button>
-        <button onClick={ () => deleteShelter(shelter.id) }>Delete Shelter</button>
+        <h3 className="shelter-name">{ shelter.shelterName }</h3>
+        <h5>Address: <span className="shelter-address">{ shelter.shelterAddress }</span> | City: <span className="city-zip-code">{ shelter.shelterCity }</span> | Zip code <span className="shelter-zip-code">{ shelter.shelterZipCode }</span></h5>
+        <h5>Phone: <span className="shelter-phone">{ shelter.shelterPhone }</span></h5>
+        <button className="select-button" onClick={ () => selectShelter(shelter) }>EDIT SHELTER</button>
+        <button className="delete-button" onClick={ () => deleteShelter(shelter.id) }>DELETE SHELTER</button>
       </div>
     )
   }
